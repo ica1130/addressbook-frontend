@@ -1,6 +1,6 @@
 # addressbook-frontend
 
-When I try to communicate with the server from the Google Chrome I always get some kind of mistake.
+When I try to communicate with the server from the Google Chrome I always get some kind of mistake. I had all types of requests for POST, PUT, GET and DELETE, and none unfortunately worked, so I decided I will start only with POST.
 
 I keep getting this error: "Access to fetch at 'http://localhost:8080/api/contacts' from origin 'null' has been blocked by CORS policy: 
 Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource. 
