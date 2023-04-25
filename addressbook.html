@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Address Book</title>
+    
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      form label {
+        margin-bottom: 10px;
+      }
+      form input[type="text"] {
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      form button {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      #contact-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+      }
+      #contact-list li {
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #contact-list li:last-child {
+        border-bottom: none;
+      }
+      #search-form {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+      #search-form label {
+        margin-bottom: 10px;
+      }
+      #search-form input[type="text"] {
+        padding: 5px;
+        margin-bottom: 10px;
+      }
+      #search-form button {
+        padding: 10px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+      }
+      .btn-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .btn-container button {
+        margin-right: 10px;
+      }
+    </style>
+    
+  </head>
+  <body>
+    <h1>Address Book</h1>
+
+    <form id="add-contact-form">
+      <label for="add-contact-name">Name:</label>
+      <input type="text" id="add-contact-name" required>
+
+      <label for="add-contact-address">Address:</label>
+      <input type="text" id="add-contact-address" required>
+
+      <button type="submit">Add Contact</button>
+    </form>
+
+    <div id="contact-list"></div>
+
+    <form id="search-form">
+      <label for="search-contact-id">ID:</label>
+      <input type="text" id="search-contact-id">
+
+      <label for="search-contact-name">Name:</label>
+      <input type="text" id="search-contact-name">
+
+      <label for="search-contact-address">Address:</label>
+      <input type="text" id="search-contact-address">
+
+      <button type="submit">Search Contacts</button>
+    </form>
+
+    <div id="search-results"></div>
+
+    <script src="main.js"></script>
+    
+  </body>
+</html>
