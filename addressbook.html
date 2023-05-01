@@ -88,24 +88,34 @@
       <button type="submit">Add Contact</button>
     </form>
 
-    <div id="contact-list"></div>
-
-    <form id="search-form">
-      <label for="search-contact-id">ID:</label>
-      <input type="text" id="search-contact-id">
-
-      <label for="search-contact-name">Name:</label>
-      <input type="text" id="search-contact-name">
+    <form id="search-form-address">
 
       <label for="search-contact-address">Address:</label>
       <input type="text" id="search-contact-address">
 
-      <button type="submit">Search Contacts</button>
+      <button type="submit">Search Contacts by Address</button>
+      
+    </form>
+
+    <form id="search-form-name">
+
+      <label for="search-contact-name">Name:</label>
+      <input type="text" id="search-contact-name">
+
+      <button type="submit">Search Contacts by Name</button>
+
+    </form>
+
+    <form id="delete-form">
+      <label for="delete-contact-id">Contact ID:</label>
+      <input type="text" id="delete-contact-id" required>
+
+      <button type="submit">Delete Contact</button>
     </form>
 
     <div id="search-results"></div>
 
     <script src="main.js"></script>
-    
+
   </body>
 </html>
